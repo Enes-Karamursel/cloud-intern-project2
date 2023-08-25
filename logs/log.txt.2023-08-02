@@ -1,0 +1,333 @@
+[2023-08-02 12:28:46,615] ERROR 127.0.0.1 GET HTTP/1.1 http://127.0.0.1:5000/home?keyword=anan C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /home [GET]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: <greenlet.greenlet object at 0x000001A695CB8E00 (otid=0x000001A695CF96E0) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\domain_controller.py", line 15, in get_search_detail_domain
+    response = DomainUtils.get_search_domain(keyword)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\core\utils\domain_utils.py", line 7, in get_search_domain
+    domain_response = DomainInfo.query.filter(DomainInfo.domain_name.like(f"%{keyword}%")).all()
+                      ^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+                                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\session.py", line 4171, in __call__
+    return self.class_(**local_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+                                        ^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 998, in engine
+    return self.get_engine()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 594, in get_engine
+    self._engine = rv = self._sa.create_engine(sa_url, options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 1027, in create_engine
+    return sqlalchemy.create_engine(sa_url, **engine_opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\deprecations.py", line 298, in warned
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\create.py", line 560, in create_engine
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\dialects\postgresql\psycopg2.py", line 793, in dbapi
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[2023-08-02 12:28:51,972] ERROR 127.0.0.1 GET HTTP/1.1 http://127.0.0.1:5000/home?keyword=001 C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /home [GET]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: <greenlet.greenlet object at 0x000001A696E44540 (otid=0x000001A695CFB690) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\domain_controller.py", line 15, in get_search_detail_domain
+    response = DomainUtils.get_search_domain(keyword)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\core\utils\domain_utils.py", line 7, in get_search_domain
+    domain_response = DomainInfo.query.filter(DomainInfo.domain_name.like(f"%{keyword}%")).all()
+                      ^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+                                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\session.py", line 4171, in __call__
+    return self.class_(**local_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+                                        ^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 998, in engine
+    return self.get_engine()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 594, in get_engine
+    self._engine = rv = self._sa.create_engine(sa_url, options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 1027, in create_engine
+    return sqlalchemy.create_engine(sa_url, **engine_opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\deprecations.py", line 298, in warned
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\create.py", line 560, in create_engine
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\dialects\postgresql\psycopg2.py", line 793, in dbapi
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[2023-08-02 12:29:48,203] ERROR 127.0.0.1 GET HTTP/1.1 http://127.0.0.1:5000/home?keyword=001, C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /home [GET]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\_collections.py", line 1008, in __call__
+    return self.registry[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: <greenlet.greenlet object at 0x000001A696E86A00 (otid=0x000001A695CFB780) current active started main>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\domain_controller.py", line 15, in get_search_detail_domain
+    response = DomainUtils.get_search_domain(keyword)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\core\utils\domain_utils.py", line 7, in get_search_domain
+    domain_response = DomainInfo.query.filter(DomainInfo.domain_name.like(f"%{keyword}%")).all()
+                      ^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 552, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\scoping.py", line 47, in __call__
+    sess = self.registry()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\_collections.py", line 1010, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+                                         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\session.py", line 4171, in __call__
+    return self.class_(**local_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 176, in __init__
+    bind = options.pop('bind', None) or db.engine
+                                        ^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 998, in engine
+    return self.get_engine()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 1017, in get_engine
+    return connector.get_engine()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 594, in get_engine
+    self._engine = rv = self._sa.create_engine(sa_url, options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_sqlalchemy\__init__.py", line 1027, in create_engine
+    return sqlalchemy.create_engine(sa_url, **engine_opts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\deprecations.py", line 298, in warned
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\create.py", line 560, in create_engine
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\dialects\postgresql\psycopg2.py", line 793, in dbapi
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+[2023-08-02 14:50:38,329] ERROR 127.0.0.1 GET HTTP/1.1 http://127.0.0.1:5000/home?keyword=a C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /home [GET]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1799, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column domain_info.is_active does not exist
+LINE 1: ..., domain_info.is_it_key AS domain_info_is_it_key, domain_inf...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\domain_controller.py", line 15, in get_search_detail_domain
+    response = DomainUtils.get_search_domain(keyword)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\core\utils\domain_utils.py", line 7, in get_search_domain
+    domain_response = DomainInfo.query.filter(DomainInfo.domain_name.like(f"%{keyword}%")).all()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\query.py", line 2711, in all
+    return self._iter().all()
+           ^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\query.py", line 2846, in _iter
+    result = self.session.execute(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\session.py", line 1689, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1611, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\sql\elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1478, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 2023, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1799, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column domain_info.is_active does not exist
+LINE 1: ..., domain_info.is_it_key AS domain_info_is_it_key, domain_inf...
+                                                             ^
+
+[SQL: SELECT domain_info.id AS domain_info_id, domain_info.domain_name AS domain_info_domain_name, domain_info.status_code AS domain_info_status_code, domain_info.title AS domain_info_title, domain_info.content AS domain_info_content, domain_info.is_it_key AS domain_info_is_it_key, domain_info.is_active AS domain_info_is_active, domain_info.extra_info AS domain_info_extra_info 
+FROM domain_info 
+WHERE domain_info.domain_name LIKE %(domain_name_1)s]
+[parameters: {'domain_name_1': '%a%'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2023-08-02 14:50:38,329] ERROR 127.0.0.1 GET HTTP/1.1 http://127.0.0.1:5000/home?keyword=a C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /home [GET]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1799, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column domain_info.is_active does not exist
+LINE 1: ..., domain_info.is_it_key AS domain_info_is_it_key, domain_inf...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\domain_controller.py", line 15, in get_search_detail_domain
+    response = DomainUtils.get_search_domain(keyword)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\core\utils\domain_utils.py", line 7, in get_search_domain
+    domain_response = DomainInfo.query.filter(DomainInfo.domain_name.like(f"%{keyword}%")).all()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\query.py", line 2711, in all
+    return self._iter().all()
+           ^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\query.py", line 2846, in _iter
+    result = self.session.execute(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\orm\session.py", line 1689, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1611, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\sql\elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1478, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 2023, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\base.py", line 1799, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column domain_info.is_active does not exist
+LINE 1: ..., domain_info.is_it_key AS domain_info_is_it_key, domain_inf...
+                                                             ^
+
+[SQL: SELECT domain_info.id AS domain_info_id, domain_info.domain_name AS domain_info_domain_name, domain_info.status_code AS domain_info_status_code, domain_info.title AS domain_info_title, domain_info.content AS domain_info_content, domain_info.is_it_key AS domain_info_is_it_key, domain_info.is_active AS domain_info_is_active, domain_info.extra_info AS domain_info_extra_info 
+FROM domain_info 
+WHERE domain_info.domain_name LIKE %(domain_name_1)s]
+[parameters: {'domain_name_1': '%a%'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)

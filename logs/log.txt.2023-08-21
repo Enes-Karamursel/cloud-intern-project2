@@ -1,0 +1,552 @@
+[2023-08-21 11:07:13,762] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 22, in sign_in
+    response = UserUtils.sign_in_user(email, password)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:40:51,747] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:41:04,494] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:41:21,699] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:41:30,380] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:41:57,163] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:42:45,008] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:42:54,571] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:43:03,416] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:43:17,837] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:43:41,601] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:45:23,693] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:45:33,833] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:45:40,052] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:47:40,350] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:49:47,619] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:49:57,211] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:50:04,326] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:50:41,707] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:50:58,201] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:51:08,706] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 11:53:04,392] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
+[2023-08-21 12:23:49,560] ERROR 127.0.0.1 POST HTTP/1.1 http://127.0.0.1:5000/sign_in C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py rt:0 Exception on /sign_in [POST]
+Traceback (most recent call last):
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\cloud-intern-project\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enesk\OneDrive\Masaüstü\project\cloud-intern-project\application\userland\controllers\user_controller.py", line 23, in sign_in
+    return jsonify(response.__dict__)
+                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'
